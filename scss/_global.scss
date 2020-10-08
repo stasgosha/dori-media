@@ -163,6 +163,7 @@ body {
             content: "";
             position: absolute;
             background-image: url(../images/slider/arrow/next.png);
+            background-size: contain;
             width: 0.7813vw;
             height: 1.6667vw;
             transform: scale(-1, 1);
@@ -189,6 +190,7 @@ body {
             content: "";
             position: absolute;
             background-image: url(../images/slider/arrow/next.png);
+            background-size: contain;
             width: 0.7813vw;
             height: 1.6667vw;
             left: -2.6042vw;
@@ -264,6 +266,7 @@ input.inputfile.active+label {
     text-align: right;
     &::before {
         background-image: url(../images/slider/file-active.png);
+        background-size: contain;
         top: 0.8625vw;
         left: 1.5625vw;
     }
