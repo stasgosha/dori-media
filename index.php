@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="he" dir="rtl">
+<html lang="en" dir="rtl">
 
 <head>
     <meta charset="UTF-8">
@@ -55,14 +55,14 @@
                 </div>
             </div>
         </section>
-        <form action="" id="page-form">
+        <form action="#" id="page-form">
             <section class="slider">
                 <div class="slider__inner">
                     <div class="slider__item">
                         <div class="item-title"><img src="images/slider/main-title.png" alt=""></div>
                         <div class="item-form">
                             <div class="item-form__title">פרטי הפרוייקט:</div>
-                            <form class="custom-form">
+                            <div class="custom-form">
                                 <div class="item-form__input error">
                                     <label>שם הפרויקט:<span class="pink">*</span></label>
                                     <input type="text" name="project-name" required>
@@ -76,25 +76,25 @@
                                     <div class="item-form__radio-inner">
                                         <div class="item-form__radio-input">
                                             <label>
-                                                <input type="radio" name="television">
+                                                <input value="טלויזיה" type="radio" name="name">
                                                 <span>טלויזיה</span>
                                             </label>
                                         </div>
                                         <div class="item-form__radio-input">
                                             <label>
-                                                <input type="radio" name="Digital">
+                                                <input value="דיגיטל" type="radio" name="name">
                                                 <span>דיגיטל</span> 
                                             </label>
                                         </div>
                                         <div class="item-form__radio-input">
                                             <label>
-                                                <input type="radio" name="network">
+                                                <input value="רשת חברתית" type="radio" name="name">
                                                 <span>רשת חברתית</span> 
                                             </label>
                                         </div>
                                         <div id="other" class="item-form__radio-input">
                                             <label>
-                                                <input  type="radio" name="other">
+                                                <input value="אחר"  type="radio" name="name">
                                                 <span>אחר</span>
                                             </label>
                                         </div> 
@@ -104,13 +104,13 @@
                                         </div>
                                     </div>
                                 </div>
-                            </form>
+                            </div>
                         </div>
                     </div>
                     <div class="slider__item">
                         <div class="item-form">
                             <div class="item-form__title">פרטי הצוות:</div>
-                            <form class="custom-form">
+                            <div class="custom-form">
                                 <div class="border-line">חובה למלא לפחות שני אנשי צוות אבל לא יותר משלושה</div>
                                 <div class="item-form__text"><span>מגיש ראשי - </span>איש צוות ראשון </div>
                                 <div class="item-form__input">
@@ -141,13 +141,13 @@
                                     <input type="file" name="file-1" class="inputfile" required>
                                     <label><span>צרף קו״ח</span> קובץ PDF בלבד<span class="pink">* </span></label>
                                 </div>
-                            </form>
+                            </div>
                         </div>
                     </div>
                     <div class="slider__item">
                         <div class="item-form">
                             <div class="item-form__title">פרטי הצוות:</div>
-                            <form class="custom-form">
+                            <div class="custom-form">
                                 <div class="item-form__text">איש צוות שני</div>
                                 <div class="item-form__input">
                                     <label>שם פרטי ומשפחה:<span class="pink">*</span></label>
@@ -177,13 +177,13 @@
                                     <input type="file" name="file-2" class="inputfile" required>
                                     <label><span>צרף קו״ח</span> קובץ PDF בלבד<span class="pink">* </span></label>
                                 </div>
-                            </form>
+                            </div>
                         </div>
                     </div>
                     <div class="slider__item">
                         <div class="item-form">
                             <div class="item-form__title">פרטי הצוות:</div>
-                            <form class="custom-form">
+                            <div class="custom-form">
                                 <div class="item-form__text">איש צוות שלישי</div>
                                 <div class="item-form__input">
                                     <label>שם פרטי ומשפחה:<span class="pink">*</span></label>
@@ -213,13 +213,13 @@
                                     <input type="file" class="inputfile" name="file-3" required>
                                     <label><span>צרף קו״ח</span> קובץ PDF בלבד<span class="pink">* </span></label>
                                 </div>
-                            </form>
+                            </div>
                         </div>
                     </div>
                     <div class="slider__item">
                         <div class="item-form">
                             <div class="item-form__title">תיאור הפרוייקט:</div>
-                            <form class="custom-form">
+                            <div class="custom-form">
                                 <div class="item-form__textarea">
                                     <label>איך תתאר את הרעיון שלך לילד בן 10?<span class="pink">*</span><span class="small">הרעיונות הכי טובים פשוטים וקלים להבנה – תהיה ברור והימנע ממילים גבוהות</span></label>
                                     <div class="textarea-box">
@@ -248,13 +248,13 @@
                                         <span class="textarea-bottom">400/225</span>
                                     </div>
                                 </div>
-                            </form>
+                            </div>
                         </div>
                     </div>
                     <div class="slider__item">
                         <div class="item-form">
                             <div class="item-form__title">תיאור הפרוייקט:</div>
-                            <form class="custom-form">
+                            <div class="custom-form">
                                 <div class="item-form__textarea">
                                     <label>באיזה שלב נמצא הרעיון מבחינת פיתוח?<span class="pink">*</span></label>
                                     <div class="textarea-box">
@@ -277,13 +277,13 @@
                                         <span class="textarea-bottom">500/225</span>
                                     </div>
                                 </div>
-                            </form>
+                            </div>
                         </div>
                     </div>
                     <div class="slider__item">
                         <div class="item-form">
                             <div class="item-form__title">תיאור הפרוייקט:</div>
-                            <form class="custom-form">
+                            <div class="custom-form">
                                 <div class="item-form__textarea">
                                     <label>ציין את שלושת הפרויקטים המאתגרים ביותר שעבדת בהם
                                         בטלוויזיה או בדיגיטל, ומה למדת מהם</label>
@@ -315,7 +315,7 @@
                                     </div>
                                 </div>
                                 <a href="#" id="form-end" class="item-form__btn btn"><img src="images/main/button_the-end.png" alt=""></a>
-                            </form>
+                            </div>
                         </div>
                     </div>
                 </div>
