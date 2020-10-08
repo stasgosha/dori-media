@@ -92,9 +92,9 @@ body {
     width: 19.0625vw;
     // font-size: 2.9167vw;
     // line-height: 1.2;
-    // border-radius: 1.3021vw;
-    // border-bottom: 0.1563vw solid #a3076b;
-    // background: $pink;
+    border-radius: 1.3021vw;
+    border-bottom: 0.1563vw solid #a3076b;
+    background: $pink;
     font-family: $ff;
     text-align: center;
     display: flex;
@@ -109,6 +109,18 @@ body {
         display: block;
         height: 5.2604vw;
         width: auto;
+    }
+
+    @media screen and (max-width: 991px){
+        max-width: 76.5625vw;
+        width: 100%;
+        border-radius: 8.1250vw;
+        height: 20.6250vw;
+        border-bottom: 0.6250vw solid #a3076b;
+
+        img{
+            height: 11.2500vw;
+        }
     }
 }
 
