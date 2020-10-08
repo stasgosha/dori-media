@@ -175,6 +175,7 @@ body {
             content: "";
             position: absolute;
             background-image: url(../images/slider/arrow/next.png);
+            background-repeat: no-repeat;
             background-size: contain;
             width: 0.7813vw;
             height: 1.6667vw;
@@ -202,6 +203,7 @@ body {
             content: "";
             position: absolute;
             background-image: url(../images/slider/arrow/next.png);
+            background-repeat: no-repeat;
             background-size: contain;
             width: 0.7813vw;
             height: 1.6667vw;
@@ -218,7 +220,7 @@ body {
 /* input-file start */
 
 .input__file {
-    margin-top: 0.7813vw;
+    margin-top: 0.3813vw;
     width: 100%;
     input.inputfile {
         max-width: 100% !important;
