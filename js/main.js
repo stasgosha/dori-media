@@ -25,4 +25,50 @@ $(document).ready(function() {
         $('body').toggleClass('slider-active');
         $('body').addClass('slider-end');
     });
+
+    // Validate
+    $("#page-form").validate({
+        rules: {
+            userName: {
+                required: true,
+                minlength: 2
+            },
+            userPhone: {
+                required: true
+            }
+        },
+        submitHandler: function(form) {
+            // $(form).submit();
+            ajaxSubmit( $(form), callback );
+        },
+        errorPlacement: function(error, element) {
+            $(element).closest('.form-row').append(error);
+        },
+    });
+
+    function callback(){}
+
+    function ajaxSubmit(form, modalID, redirect){
+        var form_data = form.serialize();
+        $.ajax({
+            type: "POST",
+            url: "send.php",
+            data: form_data,
+            success: function(form) {
+                $(form).trigger('reset');
+
+                if (redirect !== undefined) {
+                    window.location.href = redirect;
+                } else{
+                    if (modalID !== false) {
+                        hideModal('.modal');
+                        showModal(modalID);
+                    } else{
+                        console.log('js-submit');
+                        $('.slider__inner').slick('slickNext');
+                    }
+                }
+            }
+        });
+    }
 });
