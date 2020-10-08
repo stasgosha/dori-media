@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="rtl">
+<html lang="he" dir="rtl">
 
 <head>
     <meta charset="UTF-8">
@@ -55,7 +55,7 @@
                 </div>
             </div>
         </section>
-        <form action="#" id="page-form">
+        <form action="" id="page-form">
             <section class="slider">
                 <div class="slider__inner">
                     <div class="slider__item">
@@ -314,7 +314,7 @@
                                         <label><span>צרף קו״ח</span> קובץ PDF בלבד<span class="pink">*</span></label>
                                     </div>
                                 </div>
-                                <a href="#" id="form-end" class="item-form__btn btn">400/225</a>
+                                <a href="#" id="form-end" class="item-form__btn btn"><img src="images/main/button_the-end.png" alt=""></a>
                             </form>
                         </div>
                     </div>
