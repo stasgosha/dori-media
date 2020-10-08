@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dori Media</title>
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <section class="main-slide">
+            <div class="main-slide__start">
+                <div class="main-slide__version mob-hide"><img src="images/main/main-version.png" alt="מועד אחרון להגשת מועמדות: 1.11.20"></div>
+                <div class="logo">
+                    <img src="images/main/logo.png" alt="">
+                </div>
+                <div class="main-slide__contant">
+                    <div class="main-slide__title">
+                        <div class="main-slide__title-poster"><img src="images/main/absolute_1.png" alt=""></div>
+                        <div class="main-slide__title-img"><img src="images/main/title-1.png" alt=""></div>
+                        <div class="main-slide__title-img"><img src="images/main/title-2.png" alt=""></div>
+                    </div>
+                    <p>
+                        חברת דורי מדיה גאה להשיק אקסלרטור חדשנות (תכנית האצה) לפיתוח פורמטים בלתי מתוסרטים, עבור פלטפורמות הטלויזיה והדיגיטל בעולם. מדובר בתוכנית אינטנסיבית בת 3 חודשים שתתמקד בהפיכת רעיון למוצר. בסיומה, הפרוייקטים הנבחרים יושקו בשוק הבינלאומי. זוהי הזדמנות יוצאת
+                        דופן עבור יוצרים ויוצרות בעלי רעיונות מקוריים, המעוניינים להתפתח במסגרת מקצועית ומאתגרת, תוך רכישת שיטות וכלים חדשניים של STORYTELLING בליווי צמוד של צוות התוכן והמכירות הבינלאומי של החברה.
+                    </p>
+                    <p class="bold wide">
+                        המועמדים שיתקבלו יזכו להשתתף בתוכנית ללא עלות מצידם, אך יצטרכו להתחייב לתהליך. מלאו עכשיו את שאלון ההרשמה! אנחנו מחכים לשמוע את הרעיונות שלכם!
+                    </p>
+                    <div class="main-slide__version mob-show"><img src="images/main/main-version.png" alt="מועד אחרון להגשת מועמדות: 1.11.20"></div>
+                    <div class="main-slide__inner">
+                        <div class="main-slide__item"><span>אנא קראו</span>
+                            <a href="document/pdf/takanon.pdf" class="btn"><img src="images/main/button_1.png" alt="תקנון"></a>
+                        </div>
+                        <div class="main-slide__item"><span>לפירוט דרישות הקבלה יש להוריד את המסמך</span>
+                            <a href="document/pdf/kol.pdf" class="btn"><img src="images/main/button_2.png" alt="קול קורא"></a>
+                        </div>
+                        <div class="main-slide__item"><span>חושבעים שאתם מתאימים?</span>
+                            <a href="#" class="btn fw-black"><img src="images/main/button_3.png" alt="לחצו להרשמה >"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="logo mob-show footer-logo">
+                    <img src="images/main/logo.png" alt="">
+                </div>
+            </div>
+            <div class="main-slide__end">
+                <div class="slider-end__contant">
+                    <img src="images/main/logo.png" alt="">
+                    <img src="images/slider/the-end.png" alt="">
+                </div>
+            </div>
+        </section>
+        <form action="#" id="page-form">
+            <section class="slider">
+                <div class="slider__inner">
+                    <div class="slider__item">
+                        <div class="item-title"><img src="images/slider/main-title.png" alt=""></div>
+                        <div class="item-form">
+                            <div class="item-form__title">פרטי הפרוייקט:</div>
+                            <form class="custom-form">
+                                <div class="item-form__input error">
+                                    <label>שם הפרויקט:<span class="pink">*</span></label>
+                                    <input type="text" name="project-name" required>
+                                </div>
+                                <div class="item-form__input">
+                                    <label>ז׳אנר:<span class="pink">*</span></label>
+                                    <input type="text" name="genre" required>
+                                </div>
+                                <div class="item-form__radio">
+                                    <span>מיועד לפלטפורמה:<span class="pink">*</span></span>
+                                    <div class="item-form__radio-inner">
+                                        <div class="item-form__radio-input">
+                                            <label>
+                                                <input type="radio" name="television">
+                                                <span>טלויזיה</span>
+                                            </label>
+                                        </div>
+                                        <div class="item-form__radio-input">
+                                            <label>
+                                                <input type="radio" name="Digital">
+                                                <span>דיגיטל</span> 
+                                            </label>
+                                        </div>
+                                        <div class="item-form__radio-input">
+                                            <label>
+                                                <input type="radio" name="network">
+                                                <span>רשת חברתית</span> 
+                                            </label>
+                                        </div>
+                                        <div id="other" class="item-form__radio-input">
+                                            <label>
+                                                <input  type="radio" name="other">
+                                                <span>אחר</span>
+                                            </label>
+                                        </div> 
+                                        <div class="item-form__input shadow">
+                                            <input type="text" name="one-more" required>
+                                            <label>פרט אחר:<span class="pink">*</span></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="slider__item">
+                        <div class="item-form">
+                            <div class="item-form__title">פרטי הצוות:</div>
+                            <form class="custom-form">
+                                <div class="border-line">חובה למלא לפחות שני אנשי צוות אבל לא יותר משלושה</div>
+                                <div class="item-form__text"><span>מגיש ראשי - </span>איש צוות ראשון </div>
+                                <div class="item-form__input">
+                                    <label>שם פרטי ומשפחה:<span class="pink">*</span></label>
+                                    <input type="text" name="name-surname-1" required>
+                                </div>
+                                <div class="item-form__input">
+                                    <label>כתובת:<span class="pink">*</span></label>
+                                    <input type="text" name="address-1" required>
+                                </div>
+                                <div class="item-form__input">
+                                    <label>טלפון:<span class="pink">*</span></label>
+                                    <input type="text" name="phone-1" required>
+                                </div>
+                                <div class="item-form__input">
+                                    <label>דוא״ל:<span class="pink">*</span></label>
+                                    <input type="text" name="email-1" required>
+                                </div>
+                                <div class="item-form__input">
+                                    <label>אתר אינטרנט:<span class="small">אישי/פייסבוק/לינקאין</span></label>
+                                    <input type="text" name="web-site-1" placeholder="הכנס קישור">
+                                </div>
+                                <div class="item-form__input">
+                                    <label>תפקיד בפרויקט:<span class="pink">*</span></label>
+                                    <input type="text" name="role-project-1" required>
+                                </div>
+                                <div class="item-form__input">
+                                    <input type="file" name="file-1" class="inputfile" required>
+                                    <label><span>צרף קו״ח</span> קובץ PDF בלבד<span class="pink">* </span></label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="slider__item">
+                        <div class="item-form">
+                            <div class="item-form__title">פרטי הצוות:</div>
+                            <form class="custom-form">
+                                <div class="item-form__text">איש צוות שני</div>
+                                <div class="item-form__input">
+                                    <label>שם פרטי ומשפחה:<span class="pink">*</span></label>
+                                    <input type="text" name="name-surname-2" required>
+                                </div>
+                                <div class="item-form__input">
+                                    <label>כתובת:<span class="pink">*</span></label>
+                                    <input type="text" name="address-2" required>
+                                </div>
+                                <div class="item-form__input">
+                                    <label>טלפון:<span class="pink">*</span></label>
+                                    <input type="text" name="phone-2" required>
+                                </div>
+                                <div class="item-form__input">
+                                    <label>דוא״ל:<span class="pink">*</span></label>
+                                    <input type="text" name="email-2" required>
+                                </div>
+                                <div class="item-form__input">
+                                    <label>אתר אינטרנט:<span class="small">אישי/פייסבוק/לינקאין</span></label>
+                                    <input type="text" name="web-site-2" placeholder="הכנס קישור">
+                                </div>
+                                <div class="item-form__input">
+                                    <label>תפקיד בפרויקט:<span class="pink">*</span></label>
+                                    <input type="text" name="role-project-2" required>
+                                </div>
+                                <div class="item-form__input">
+                                    <input type="file" name="file-2" class="inputfile" required>
+                                    <label><span>צרף קו״ח</span> קובץ PDF בלבד<span class="pink">* </span></label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="slider__item">
+                        <div class="item-form">
+                            <div class="item-form__title">פרטי הצוות:</div>
+                            <form class="custom-form">
+                                <div class="item-form__text">איש צוות שלישי</div>
+                                <div class="item-form__input">
+                                    <label>שם פרטי ומשפחה:<span class="pink">*</span></label>
+                                    <input type="text" name="name-surname-3" required>
+                                </div>
+                                <div class="item-form__input">
+                                    <label>כתובת:<span class="pink">*</span></label>
+                                    <input type="text" name="address-3" required>
+                                </div>
+                                <div class="item-form__input">
+                                    <label>טלפון:<span class="pink">*</span></label>
+                                    <input type="text" name="phone-3" required>
+                                </div>
+                                <div class="item-form__input">
+                                    <label>דוא״ל:<span class="pink">*</span></label>
+                                    <input type="text" name="email-3" required>
+                                </div>
+                                <div class="item-form__input">
+                                    <label>אתר אינטרנט:<span class="small">אישי/פייסבוק/לינקאין</span></label>
+                                    <input type="text" name="web-site-3" placeholder="הכנס קישור">
+                                </div>
+                                <div class="item-form__input">
+                                    <label>תפקיד בפרויקט:<span class="pink">*</span></label>
+                                    <input type="text" name="role-project-3" required>
+                                </div>
+                                <div class="item-form__input">
+                                    <input type="file" class="inputfile" name="file-3" required>
+                                    <label><span>צרף קו״ח</span> קובץ PDF בלבד<span class="pink">* </span></label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="slider__item">
+                        <div class="item-form">
+                            <div class="item-form__title">תיאור הפרוייקט:</div>
+                            <form class="custom-form">
+                                <div class="item-form__textarea">
+                                    <label>איך תתאר את הרעיון שלך לילד בן 10?<span class="pink">*</span><span class="small">הרעיונות הכי טובים פשוטים וקלים להבנה – תהיה ברור והימנע ממילים גבוהות</span></label>
+                                    <div class="textarea-box">
+                                        <textarea minlength="500" name="idea" placeholder="500 תווים" required></textarea> 
+                                        <span class="textarea-bottom">500/225</span>
+                                    </div>
+                                </div>
+                                <div class="item-form__textarea">
+                                    <label>כתוב את הרעיון שלך כ- ONELINER<span class="pink">*</span><span class="small">כ- 2-3 משפטים המתארים את הפורמט (התחלה, אמצע, סוף)</span></label>
+                                    <div class="textarea-box">
+                                        <textarea minlength="350" name="idea-oneliner" placeholder="350 תווים" required></textarea> 
+                                        <span class="textarea-bottom">350/225</span>
+                                    </div>
+                                </div>
+                                <div class="item-form__textarea">
+                                    <label>מי קהל היעד של הרעיון שלך?<span class="pink">*</span><span>הסבר מדוע</span></label>
+                                    <div class="textarea-box">
+                                        <textarea minlength="200" name="target-audience" placeholder="200 תווים" required></textarea> 
+                                        <span class="textarea-bottom">200/225</span>
+                                    </div>
+                                </div>
+                                <div class="item-form__textarea">
+                                    <label>מדוע הרעיון שלך טוב יותר (ייחודי) מרעיונות דומים הקיימים בשוק?<span class="pink">*</span></label>
+                                    <div class="textarea-box">
+                                        <textarea minlength="400" name="idea-unique" placeholder="400 תווים" required></textarea> 
+                                        <span class="textarea-bottom">400/225</span>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="slider__item">
+                        <div class="item-form">
+                            <div class="item-form__title">תיאור הפרוייקט:</div>
+                            <form class="custom-form">
+                                <div class="item-form__textarea">
+                                    <label>באיזה שלב נמצא הרעיון מבחינת פיתוח?<span class="pink">*</span></label>
+                                    <div class="textarea-box">
+                                        <textarea minlength="400" name="idea-development" placeholder="400 תווים" required></textarea> 
+                                        <span class="textarea-bottom">400/225</span>
+                                    </div>
+                                </div>
+                                <div class="item-form__input all-width">
+                                    <label>צלם פיטץ׳ של הרעיון (כסלפי וידאו)<span class="white">באורך של לא יותר מדקה.</span><span class="small">הגשות ללא פיטץ׳ לא יתקבלו.</span></label>
+                                    <input type="text" name="idea-photographer" required>
+                                </div>
+                                <div class="item-form__input all-width">
+                                    <label>סיסמא עבור הוידאו (במידת הצורך)<span class="pink">*</span></label>
+                                    <input type="text" name="video-password" required>
+                                </div>
+                                <div class="item-form__textarea">
+                                    <label>תאר באופן כללי את הניסיון המקצועי שלך ושל הצוות שלך</label>
+                                    <div class="textarea-box">
+                                        <textarea minlength="500" name="professional-experience" placeholder="500 תווים"></textarea>
+                                        <span class="textarea-bottom">500/225</span>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="slider__item">
+                        <div class="item-form">
+                            <div class="item-form__title">תיאור הפרוייקט:</div>
+                            <form class="custom-form">
+                                <div class="item-form__textarea">
+                                    <label>ציין את שלושת הפרויקטים המאתגרים ביותר שעבדת בהם
+                                        בטלוויזיה או בדיגיטל, ומה למדת מהם</label>
+                                    <div class="textarea-box">
+                                        <textarea minlength="500" name="list-projects" placeholder="500 תווים" required></textarea> 
+                                        <span class="textarea-bottom">500/225</span>
+                                    </div>
+                                </div>
+                                <div class="item-form__textarea">
+                                    <label>מדוע הפרויקט הזה חשוב לך ואיך אתה מתכוון לגרום לו לקרות?</label>
+                                    <div class="textarea-box">
+                                        <textarea minlength="400" name="implement-project" placeholder="400 תווים"></textarea> 
+                                        <span class="textarea-bottom">400/225</span>
+                                    </div>
+                                </div>
+                                <div class="item-form__input">
+                                    <strong>ניתן לצרף מסמכים נוספים כמו: סינופסיס, ליין אפ, מצגת <span>קובץ PDF בלבד</span></strong>
+                                    <div class="input__file">
+                                        <input type="file" name="documents-1" class="inputfile">
+                                        <label><span>צרף קו״ח</span> קובץ PDF בלבד<span class="pink">*</span></label>
+                                    </div>
+                                    <div class="input__file">
+                                        <input type="file"  name="documents-2" class="inputfile">
+                                        <label><span>צרף קו״ח</span> קובץ PDF בלבד<span class="pink">*</span></label>
+                                    </div>
+                                    <div class="input__file">
+                                        <input type="file"  name="documents-3" class="inputfile">
+                                        <label><span>צרף קו״ח</span> קובץ PDF בלבד<span class="pink">*</span></label>
+                                    </div>
+                                </div>
+                                <a href="#" id="form-end" class="item-form__btn btn">400/225</a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-btn"></div>
+                <div class="logo">
+                    <img src="images/main/logo.png" alt="">
+                </div>
+            </section>
+        </form>
+    </div>
+
+    <script src="js/libs.min.js"></script>
+    <script src="js/jquery-validate.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
