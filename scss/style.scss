@@ -1,0 +1,407 @@
+@import "vars";
+@import "global"; //title, (button = btn, btn-white,  btn-purple), (btn-link, btn-link-white-purple, btn-link-black-purple)
+@import "fonts";
+//
+//main-slide start 
+body {
+    min-height: 100vh;
+    position: relative;
+    .main-slide__end{
+        display: none;
+    }
+}
+
+.logo {
+    position: absolute;
+    left: 2.8646vw;
+    bottom: 2.0833vw;
+    z-index: 99;
+    width: 11.1979vw;
+
+    img{
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+.main-slide {
+    background: #98dbe2;
+    position: relative;
+    z-index: 1;
+    min-height: 100vh;
+    .main-slide__start:after {
+        content: "";
+        top: 2.3438vw;
+        left: 5.2083vw;
+        transform: scale(-1, 1);
+        position: absolute;
+        width: 30.0521vw;
+        height: 43.1521vw;
+        background-image: url(../images/main/lamp.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: right top;
+    }
+    &__version {
+        font-size: 1.6146vw;
+        line-height: 2.1875vw;
+        padding-top: 1.5625vw;
+        padding-right: 1.5625vw;
+        color: #fff;
+        img {
+            display: block;
+            height: 1.7708vw;
+            width: auto;
+        }
+    }
+    &__contant {
+        display: flex;
+        flex-direction: column;
+        width: 65vw;
+        padding: 4.1667vw 2.3438vw 1.5vw 2.0833vw;
+        text-align: center;
+        p {
+            // margin-top: 17.1875vw;
+            margin-top: 0.8vw;
+            padding: 0 2.8646vw;
+            font-size: 1.6146vw;
+            line-height: 1.1;
+            letter-spacing: -0.035em;
+            &.bold {
+                font-weight: 600;
+            }
+            &+p {
+                margin-top: 1.0417vw;
+            }
+
+            &.wide{
+                padding-left: 0;
+                padding-right: 0;
+            }
+        }
+    }
+    &__version {}
+    &__title {
+        position: relative;
+        padding: 0 3.6458vw;
+    }
+    &__title-img {
+        img{
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+
+        &+& {
+            margin-top: 0.8vw;
+        }
+    }
+    &__title-poster {
+        position: absolute;
+        left: 3.6625vw;
+        top: -7.5521vw;
+        width: 15.3125vw;
+
+        img{
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+    }
+    &__inner {
+        display: flex;
+        margin-top: 1.7250vw;
+    }
+    &__item {
+        text-align: center;
+        &+& {
+            margin-right: 1.5625vw;
+        }
+        span {
+            display: block;
+            font-size: 1.0417vw;
+            line-height: 0.75;
+            margin-bottom: 0.4688vw;
+        }
+    } 
+}
+
+//slider
+.slider-active {
+    .main-slide {
+        transform: translate(0, 100%);
+        transition: all, 0.5s;
+        opacity: 0;
+    }
+    .slider {
+        opacity: 1;
+        z-index: 5;
+        transition: all, 2s;
+    }
+}
+
+.slider {
+    position: absolute;
+    opacity: 0;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    background-color: #98dbe2;
+    // transform: translateX(-100%);
+    &:before {
+        content: "";
+        position: absolute;
+        z-index: 99;
+        width: 20.6146vw;
+        height: 29.8333vw;
+        left: 14.3229vw;
+        top: 16.5625vw;
+        background-image: url(../images/main/lamp.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .item-title {
+        background: $pink;
+        padding: 2.6042vw 7.8125vw;
+    }
+    &__item {
+        position: relative;
+    }
+    .item-form {
+        max-height: 100vh;
+        overflow-y: auto;
+        overscroll-behavior-y: contain;
+
+        form { 
+            margin-top: 1.5625vw;
+            max-width: 60vw;
+            width: 100%;
+            padding-right: 7.8125vw;
+        }
+        
+        &__title {
+            background: #fff;
+            padding: 2.6042vw 7.8125vw;
+            font-size: 2.6042vw;
+            line-height: 2.6042vw;
+            font-family: $ff;
+        }
+        &__text {
+            margin-top: 6.2917vw;
+            margin-bottom: 1.0417vw;
+            color: #fff;
+            span {
+                font-weight: 600;
+                color: #101516;
+            }
+        }
+        &__input,
+        &__textarea {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            margin-top: 1.2833vw;
+            input,
+            textarea {
+                max-width: 34.1146vw;
+                width: 100%;
+                font-size: 1.3021vw;
+                padding: 0 1.8229vw;
+                line-height: 2.5854vw;
+                margin-right: auto;
+                border: none;
+                &:focus {
+                    outline: none;
+                }
+            }
+            &.all-width input{
+                max-width: 100%;
+            }
+            label span.small {
+                display: block;
+                font-size: 1.1979vw;
+            }
+            &.error{ 
+                position: relative;
+                input{ 
+                    border: 2px solid #e2211c;
+                }
+                &:after{
+                    content: "יש למלא שדה זה";
+                    position: absolute;
+                    color: #e2211c;
+                    font-size: 1.3021vw;
+                    left: 35px;
+                } 
+            }
+        }
+        &__textarea {
+            .textarea-box {
+                width: 100%;
+                position: relative;
+                .textarea-top {
+                    position: absolute;
+                    top: 0.2604vw;
+                    right: 1.0417vw;
+                    font-size: 1.3021vw;
+                }
+                .textarea-bottom {
+                    position: absolute;
+                    bottom: 0.5208vw;
+                    left: 1.0417vw;
+                    font-size: 0.9375vw;
+                }
+                .textarea-top,
+                .textarea-bottom {
+                    color: #d9d8d6;
+                }
+            }
+            textarea {
+                resize: none;
+                max-width: 100%;
+            }
+            label {
+                width: 100%;
+                font-weight: 600;
+                span {
+                    font-weight: 400;
+                }
+            }
+        }
+        &__radio {
+            margin-top: 1.5625vw;
+            display: flex;
+            &-inner {
+                max-width: 34.1146vw;
+                width: 100%;
+                margin-right: auto;
+                &>label {
+                    width: 100%;
+                    display: block;
+                    background-color: #a7e0e6;
+                    padding: 0.5208vw 1.0417vw;
+                }
+                .item-form__radio-input:nth-last-child(1){
+
+                }
+            }
+            &-input {
+                margin-bottom: 1.0417vw;
+            }
+            .item-form__input{
+                position: relative;
+                input{
+                    background: #a7e0e6;
+                    &:focus + label, &:active + label, &:valid + label{
+                        opacity: 0;
+                    }
+                }
+                label{
+                    position: absolute; 
+                    right: 20px;
+                }
+            } 
+        }
+        &__btn{
+            position: absolute;
+            left: -7.7083vw;
+            bottom: -7.7083vw;
+            z-index: 99;
+        }
+    }
+}
+
+.custom-form {
+    position: relative;
+    /* custom form*/
+    // input:invalid:not(:placeholder-shown) {
+    //     border-color: #e2211c;
+    // }
+    //radio
+    .item-form__radio-input {
+        label {
+            position: relative;
+            cursor: pointer;
+        }
+        input[type=radio] {
+            position: absolute;
+            visibility: hidden;
+            height: 2.0833vw;
+            width: 2.0833vw;
+            top: 0;
+            left: 0;
+        }
+        input[type=radio]+span {
+            margin-right: 2.6042vw;
+        }
+        input[type=radio]+span:before {
+            content: '';
+            border: 0.1042vw solid #fff;
+        }
+        input[type=radio]+span:after {
+            content: "";
+            background: $pink;
+            visibility: hidden;
+            border: 0.2604vw solid #fff;
+        }
+        input[type=radio]+span:before,
+        input[type=radio]+span:after {
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 1.4583vw;
+            height: 1.4583vw;
+            border-radius: 50%;
+        }
+        input[type=radio]:checked+span:before {
+            background: transparent;
+        }
+        input[type=radio]:checked+span:after {
+            visibility: visible;
+        }
+    }
+}
+//slider-end
+.slider-end{
+    .main-slide__start{
+        display: none;
+    }
+    .main-slide__end{
+        display: block;
+    }
+}
+.main-slide__end {
+    min-height: 100vh;
+    background: #98dbe2;
+    position: relative;
+    &:after{
+        content: ""; 
+        top: 2.3438vw;
+        right: 7.8125vw; 
+        position: absolute;
+        width: 31.5104vw;
+        height: 52.0833vw;
+        background-image: url(../images/main/lamp.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 100% 100%;
+    }
+
+}
+.slider-end__contant {
+    position: absolute; 
+    display: flex;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%); 
+    img+img{
+        margin-right: 1.0417vw;
+    }
+} 
+//main-slide end
+//
+@import "media";

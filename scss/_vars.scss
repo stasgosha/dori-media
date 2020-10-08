@@ -1,0 +1,19 @@
+//colors 
+$pink:#ef93d9; 
+$black:#101516;
+//body-start
+$ff: "Fb Elitism"; //first regular     
+$second-font: 'Alef', $ff;
+$fz:1.5625vw; //body font-size
+$lh:1.4; //body line-height
+//button discharge
+@mixin button() {
+    display: block;
+    cursor: pointer;
+    padding: 0;
+    border-width: 0;
+    border-style: none;
+    border-color: transparent;
+    border-image: none; 
+    background-color: transparent;
+} 
