@@ -234,7 +234,7 @@ body {
                     position: absolute;
                     color: #e2211c;
                     font-size: 1.3021vw;
-                    left: 35px;
+                    left: 3vw;
                 } 
             }
         }
@@ -305,10 +305,11 @@ body {
                 }
             } 
         }
-        &__btn{
-            position: absolute;
-            left: -7.7083vw;
-            bottom: -7.7083vw;
+        &__btn{  
+            position: relative;
+            left: -7vw;
+            margin-top: 1vw;
+            margin-right: auto;
             z-index: 99;
         }
     }
@@ -456,8 +457,14 @@ body {
     top: 50%;
     left: 30%;
     transform: translate(-50%, -50%); 
+    img{ 
+        display: block; 
+        height: 6.2500vw;
+        width: auto;
+    }
     img+img{
         margin-right: 1.0417vw;
+        height: 6.5104vw;
     }
 } 
 //main-slide end
