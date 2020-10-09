@@ -8,16 +8,75 @@ $(document).ready(function() {
     }); 
     
     //slider
-    $('.slider__inner').slick({
-        infinite: false, 
-        draggable: false,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        rtl: true,
-        appendArrows: $('.slider-btn'),
-        nextArrow: '<button type="submit" class="slick-btn slick-next"></button>',
-        prevArrow: '<button type="submit" class="slick-btn slick-prev"></button>',
+    $('.slider').each(function(i, el){
+        $(el).find('.slider__inner').on('init reInit', function(e, s, c, n){
+            $(el).addClass('first-step');
+        });
+
+        $(el).find('.slider__inner').on('beforeChange', function(e, s, current, next){
+            if (next == 5) {
+                $(el).find('.js-next').addClass('js-form-submit');
+            } else{
+                $(el).find('.js-next').removeClass('js-form-submit');
+            }
+
+            if (next != 0) {
+                $(el).removeClass('first-step');
+            } else{
+                $(el).addClass('first-step');
+            }
+        });
+
+        $(el).find('.slider__inner').slick({
+            infinite: false, 
+            draggable: false,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            rtl: true,
+            arrows: false,
+            autoplay: false,
+            swipe: false,
+            keyboard: false,
+            infinite: false,
+            // appendArrows: $('.slider-btn'),
+            // nextArrow: '<button type="submit" class="slick-btn slick-next"></button>',
+            // prevArrow: '<button type="submit" class="slick-btn slick-prev"></button>',
+        });
+
+        $(el).delegate('.js-next:not(.js-form-submit)', 'click', function(e){
+            e.preventDefault();
+            // e.stopPropagation();
+
+            console.log('js-next');
+
+            if (checkFields()) {
+                $(el).find('.slider__inner').slick('slickNext');
+            }
+        });
+
+        $(el).delegate('.js-form-submit', 'click', function(e){
+            e.preventDefault();
+            // e.stopPropagation();
+
+            $(el).find('form').submit();
+        });
+
+        $(el).find('.js-prev').click(function(e){
+            e.preventDefault();
+            e.stopPropagation();
+
+            $(el).find('.slider__inner').slick('slickPrev');
+        });
+
+        function checkFields(){
+            let isValid = false;
+
+            return isValid;
+        }
     });
+
+
+
     $('.btn.fw-black').on('click', function() {
         $('body').toggleClass('slider-active');
     });
@@ -29,21 +88,23 @@ $(document).ready(function() {
     // Validate
     $("#page-form").validate({
         rules: {
-            userName: {
+            "project-name": {
                 required: true,
                 minlength: 2
             },
-            userPhone: {
+            genre: {
                 required: true
             }
         },
+        onfocusout: true,
+        onkeyup: true,
         submitHandler: function(form) {
             // $(form).submit();
             ajaxSubmit( $(form), callback );
         },
-        errorPlacement: function(error, element) {
-            $(element).closest('.form-row').append(error);
-        },
+        // errorPlacement: function(error, element) {
+        //     // $(element).closest('.form-row').append(error);
+        // },
     });
 
     function callback(){}

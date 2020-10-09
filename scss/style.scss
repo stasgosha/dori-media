@@ -314,6 +314,64 @@ body {
     }
 }
 
+.slider-btns{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 65vw;
+    right: 2.0833vw;
+    bottom: 2.8646vw;
+    position: absolute;
+    z-index: 100;
+
+    .nav-btn{
+        display: flex;
+        position: relative;
+        appearance: none;
+        padding: 0 1.5625vw;
+        font-size: 1.3021vw;
+        line-height: 1.3;
+        color: #ffffff;
+        border: 0;
+        background: transparent;
+        cursor: pointer;
+        transition: all .3s;
+
+        &:hover{
+            color: #000;
+        }
+
+        &:after{
+            content: '';
+            display: block;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 0.8333vw 0 0.8333vw 0.7813vw;
+            border-color: transparent transparent transparent currentcolor;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 0;
+        }
+
+        &.next-btn{
+            &:after{
+                left: 0;
+                right: auto;
+                transform: translateY(-50%) rotate(-180deg);
+            }
+        }
+
+        &.prev-btn{
+            .first-step &{
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+    }
+}
+
 .custom-form {
     position: relative;
     /* custom form*/
